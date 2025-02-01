@@ -42,7 +42,16 @@ body {
 .arrow:hover {
     transform: rotate(180deg);
 }
-
+.carousel-pic {
+    height: 200px; 
+    width: 100%;    
+}
+@media (max-width: 767px) {
+    .carousel-pic {
+        height: 150px;   
+        width: 100%;     
+    }
+}
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -50,6 +59,7 @@ body {
     .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
+    
 }
 
 .carousel-inner .carousel-item.active,
@@ -69,6 +79,7 @@ body {
     .carousel-inner .carousel-item-prev {
         transform: translateX(-25%);
     }
+    
 }
 
 .carousel-inner .carousel-item-end,
